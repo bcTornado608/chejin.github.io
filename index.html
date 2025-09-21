@@ -1,126 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jin Che - CV</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        max-width: 900px;
-        margin: 20px auto;
-        line-height: 1.6;
-        color: #333;
-        background-image: url('parchment.jpg');
-        background-size: cover; /* cover whole page */
-        background-repeat: no-repeat;
-        background-attachment: fixed; /* stays in place when scrolling */
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cv_latex</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
     }
-    h1, h2, h3 { color: #2c3e50; margin-bottom: 5px; }
-    h1 { font-size: 2em; }
-    h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 30px; }
-    h3 { margin-top: 10px; }
-    a { color: #1a0dab; text-decoration: none; }
-    ul { list-style-type: square; padding-left: 20px; }
-    .section { margin-bottom: 20px; }
-</style>
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
-
-<header style="text-align: center;">
-    <img src="profile.jpg" alt="Jin Che" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
-    <h1>Jin Che</h1>
-    <p><strong>Curriculum Vitae</strong></p>
-    <p>Email: <a href="mailto:jin.che@mail.utoronto.ca">jin.che@mail.utoronto.ca</a> | Phone: +1 778 323 9958</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jin-che-6a1277201/">https://www.linkedin.com/in/jin-che-6a1277201/</a> | GitHub: <a href="https://github.com/bcTornado608">https://github.com/bcTornado608</a></p>
-</header>
-
-<div class="section">
-    <h2>Education</h2>
-    <p><strong>Ph.D. in Electrical Engineering (Expected)</strong> – University of Toronto, Toronto, ON, Canada (2025-)</p>
-    <p><strong>Bachelor of Applied Science in Electrical Engineering</strong> – University of Toronto, Toronto, ON, Canada (2020-2025), cGPA: 3.80/4.00</p>
+<div class="center">
+<p><span><strong>Jin Che</strong></span><br />
+<span>Curriculum Vitae</span><br />
+</p>
 </div>
-
-<div class="section">
-    <h2>Research Interest</h2>
-    <p>Integrated Circuits; RF Circuit Design; Biomedical Electronics; Sensing</p>
-</div>
-
-<div class="section">
-    <h2>Research Internships</h2>
-    <h3>Research Assistant – Intelligent Sensory Microsystems Laboratory, University of Toronto (2024/05 - 2025/05)</h3>
-    <p>Faculty Mentor: Prof. Roman Genov</p>
-    <ul>
-        <li>Designed, simulated, and tested advanced PCB systems, including wireless energy harvesting and neural stimulation.</li>
-        <li>Developed control logic for a SAR ADC on FPGA and performed spike sorting with basic machine learning algorithms.</li>
-        <li>Contributed to multiple research projects submitted to IEEE ISSCC, involving ADC designs and neural stimulation systems.</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Professional Experience</h2>
-    <h3>ASIC Design Engineer, Intern – Advanced Micro Devices, Inc. (2023/05 - 2024/05)</h3>
-    <p>Supervisor: Zehra Allabachayo</p>
-    <ul>
-        <li>Upgraded and maintained the debug bus and performance counter design in the PCIe transaction layer sub-IP.</li>
-        <li>Managed clock domain crossing and lint violations to ensure smooth design operations.</li>
-        <li>Initialized new project variants, debugging build failures, and making code and parameter adjustments.</li>
-        <li>Optimized design infrastructure by updating components and improving power efficiency using power clamps.</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Projects</h2>
-    <h3>Brainzoom</h3>
-    <p>Intelligent Sensory Microsystems Laboratory, Ontario, Canada</p>
-    <ul>
-        <li>Designed COB (chip-on-board) for a next-generation ADC design specialized for brain activity recording.</li>
-        <li>Led the assembly and testing of the boards, ensuring thorough validation of system functionality.</li>
-    </ul>
-
-    <h3>Netron</h3>
-    <p>Intelligent Sensory Microsystems Laboratory, Ontario, Canada</p>
-    <ul>
-        <li>Designed and tested control logic for a SAR ADC on an FPGA board.</li>
-        <li>Performed spike sorting using k-means clustering on neural data recorded with our custom-designed ADC.</li>
-    </ul>
-
-    <h3>PNS with Machine Learning Mediated Dynamic Power Supply</h3>
-    <p>Intelligent Sensory Microsystems Laboratory, Ontario, Canada</p>
-    <ul>
-        <li>Led design and layout of the project from scratch, tested PCBs, and ran experiments on neural tissue.</li>
-        <li>Programmed a microcontroller to learn voltage patterns across neural tissues using machine learning techniques.</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Publications</h2>
-    <p><strong>Conference Paper (Peer Reviewed):</strong></p>
-    <p>J. Xu, M. Kanchwala, M. Abdolrazzaghi, H. Cai, Y. Huang, J. Ma, C. Lim, L. Xu, S. Gong, W. Deng, Q. Deng, <strong>J. Che</strong>, S. Nag, et al., "Event-Based Spatially Zooming Neural Interface IC with 10nW/Input Reconfigurable-Inverter Fabric and Input-Adaptive Quantization." <em>IEEE ISSCC 2025</em>, Session 15.5, pp. 274–276, San Francisco, CA, USA, Feb 18 2025.</p>
-
-    <p><strong>Journal Article (Peer Reviewed):</strong></p>
-    <p>S. Nag, A. Remadevi, <strong>J. Che</strong>, M. Prytula, H. Xing, X. Xiao, et al., "Energy-Efficient Adaptive Neural Stimulator with Waveform Prediction by Sub-Threshold Interrogation of the Electrode-Tissue Interface." <em>IEEE Transactions on Biomedical Circuits and Systems</em>, vol. PP, no. 99, May 2025. DOI: 10.1109/TBCAS.2025.3570264.</p>
-</div>
-
-<div class="section">
-    <h2>Scholarships & Awards</h2>
-    <ul>
-        <li>NSERC USRA Summer Award ($7,500) – 2024/04</li>
-        <li>Edward S Rogers Sr. Admission Scholarship ($1,000) – 2020/10</li>
-        <li>Faculty Of Applied Science And Engineering Admission Scholarship ($222) – 2020/10</li>
-        <li>Wallberg Admission Scholarships ($5,000) – 2020/10</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Skills & Tools</h2>
-    <p><strong>Tools:</strong> Cadence Virtuoso, Altium Designer, Intel Quartus Prime, AMD Vivado, Verdi, Spyglass Lint, Modelsim</p>
-    <p><strong>Skills:</strong> IC Design and Layout, PCB Design, Signal Processing, Verilog, C, C++, Perl, Python, Java, ARM Assembly</p>
-</div>
-
-<footer>
-    <p>&copy; 2025 Jin Che</p>
-</footer>
-
+<p><span><strong>Contact Information</strong></span><br />
+Email: <a
+href="mailto:jin.che@mail.utoronto.ca">jin.che@mail.utoronto.ca</a><br />
+Phone: +1 778 323 9958<br />
+LinkedIn: <a
+href="https://www.linkedin.com/in/jin-che-6a1277201/">https://www.linkedin.com/in/jin-che-6a1277201</a><br />
+Github: <a
+href="https://github.com/bcTornado608">https://github.com/bcTornado608</a><br />
+</p>
+<p><span><strong>EDUCATION</strong></span></p>
+<p><span><em><strong>Ph.D. in Electrical
+Engineering</strong></em></span> 2025 - present<br />
+University of Toronto, Toronto, ON, Canada<br />
+Supervisor: Prof. Antonio Liscidini<br />
+<span><em><strong>Bachelor of Applied Science in Electrical
+Engineering</strong></em></span> 2020 - 2025<br />
+University of Toronto, Toronto, ON, Canada<br />
+cGPA: 3.80/4.00<br />
+</p>
+<p><span><strong>RESEARCH INTEREST</strong></span></p>
+<p>Integrated Circuits; RF Circuit Design; Biomedical Electronics;
+Sensing<br />
+</p>
+<p><span><strong>RESEARCH INTERNSHIPS</strong></span></p>
+<p><span><em><strong>Research Assistant</strong></em></span> 2024/05 -
+2025/05<br />
+Intelligent Sensory Microsystems Laboratory, University of Toronto
+Ontario, Canada<br />
+Faculty Mentor: Prof. Roman Genov</p>
+<ul>
+<li><p>Focused on designing, simulating, and testing advanced PCB
+systems, including wireless energy harvesting and neural
+stimulation.</p></li>
+<li><p>Developed control logic for a SAR ADC on FPGA, and performed
+spike sorting with basic machine learning algorithms.</p></li>
+<li><p>Contributed to multiple research projects, submitted to the IEEE
+ISSCC, involving ADC designs and neural stimulation systems.</p></li>
+</ul>
+<p><span><strong>PROFESSIONAL EXPERIENCE</strong></span></p>
+<p><span><em><strong>ASIC Design Engineer, Intern</strong></em></span>
+2023/05 - 2024/05<br />
+Advanced Micro Devices, Inc. Ontario, Canada<br />
+Supervisor: Zehra Allabachayo</p>
+<ul>
+<li><p>Upgraded and maintained the debug bus and performance counter
+design in the PCIe transaction layer sub-IP.</p></li>
+<li><p>Managed clock domain crossing and lint violations to ensure
+smooth design operations.</p></li>
+<li><p>Initialized new project variants, debugging build failures, and
+making code and parameter adjustments.</p></li>
+<li><p>Optimized design infrastructure by updating components and
+improving power efficiency using power clamps.</p></li>
+</ul>
+<p><span><strong>PROJECTS</strong></span></p>
+<p><span><em><strong>Brainzoom</strong></em></span> Ontario,
+Canada<br />
+Intelligent Sensory Microsystems Laboratory</p>
+<ul>
+<li><p>Designed COB (chip-on-board) for a next-generation ADC design
+specialized for brain activity recording.</p></li>
+<li><p>Led the assembly and testing of the boards, ensuring thorough
+validation of system functionality.</p></li>
+</ul>
+<p><span><em><strong>Netron</strong></em></span> Ontario, Canada<br />
+Intelligent Sensory Microsystems Laboratory</p>
+<ul>
+<li><p>Designed and tested control logic for a Successive Approximation
+Register (SAR) ADC on an FPGA board.</p></li>
+<li><p>Performed spike sorting using k-means clustering on neural data
+from both in vivo and in vitro experiments, recorded with our
+custom-designed ADC.</p></li>
+</ul>
+<p><span><em><strong>PNS with Machine Learning Mediated Dynamic Power
+Supply</strong></em></span> Ontario, Canada<br />
+Intelligent Sensory Microsystems Laboratory</p>
+<ul>
+<li><p>Led the design and layout of the project from scratch, testing
+the printed circuit board and running experiments on neural
+tissue.</p></li>
+<li><p>Programmed a microcontroller to learn voltage patterns across
+neural tissues using machine learning techniques.</p></li>
+</ul>
+<p><span><strong>PUBLICATIONS</strong></span></p>
+<p><span><em><strong>Conference Paper (Peer
+Reviewed):</strong></em></span></p>
+<p>J. Xu, M. Kanchwala, M. Abdolrazzaghi, H. Cai, Y. Huang, J. Ma, C.
+Lim, L. Xu, S. Gong, W. Deng, Q. Deng, <strong>J. Che</strong>, S. Nag,
+J. Olorocisimo, R. Singh, Y. Wang, J. Sales Filho, M. Mohaved, H.
+Moradi, G. Eleftheriades, T. Valiante, and R. Genov,
+<strong>"Event-Based Spatially Zooming Neural Interface IC with
+10nW/Input Reconfigurable-Inverter Fabric and Input-Adaptive
+Quantization."</strong> in Proceedings of IEEE International Solid‑State
+Circuits Conference (ISSCC 2025), Session 15.5, pp. 274–276, San
+Francisco, CA, USA, Feb 18 2025.<br />
+<span><em><strong>Journal Article
+(Peer‑Reviewed):</strong></em></span></p>
+<p>S. Nag, A. Remadevi, <strong>J. Che</strong>, M. Prytula, Hanzhang
+Xing, Hanrui Xing, X. Xiao, A. Constas‑Malvanets, H. Zhang, Y. Sun, J.
+Olorocisimo, J. Zariffa, and R. Genov, <strong>“Energy‑Efficient
+Adaptive Neural Stimulator with Waveform Prediction by Sub‑Threshold
+Interrogation of the Electrode‑Tissue Interface.”</strong> in IEEE
+Transactions on Biomedical Circuits and Systems, vol. PP, no. 99 (early
+access), May 2025. DOI: 10.1109/TBCAS.2025.3570264.<br />
+</p>
+<p><span><strong>SCHOLARSHIPS &amp; AWARDS</strong></span></p>
+<p><span>NSERC USRA Summer Award ($7,500)</span> 2024/04</p>
+<p><span>Edward S Rogers Sr. Admission Scholarship ($1,000)</span>
+2020/10</p>
+<p><span>Faculty Of Applied Science And Engineering Admission
+Scholarship ($222)</span> 2020/10</p>
+<p><span>Wallberg Admission Scholarships ($5,000)</span> 2020/10<br />
+<span><strong>SKILLS &amp; TOOLS</strong></span>
+<span><em><strong>Tools:</strong></em></span> Cadence Virtuoso, Altium
+Designer, Intel Quartus Prime, AMD Vivado, Verdi, Spyglass Lint,
+Modelsim<br />
+<span><em><strong>Skills:</strong></em></span> IC Design and Layout, PCB
+Design, Signal Processing, Verilog, C, C++, Perl, Python, Java, ARM
+Assembly</p>
 </body>
 </html>
