@@ -1,128 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jin Che - CV</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        max-width: 900px;
-        margin: 20px auto;
-        line-height: 1.6;
-        color: #333;
-        background-image: url('parchment.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    h1, h2, h3 { color: #2c3e50; margin-bottom: 5px; }
-    h1 { font-size: 2em; }
-    h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 30px; }
-    h3 { margin-top: 10px; }
-    a { color: #1a0dab; text-decoration: none; }
-    ul { list-style-type: square; padding-left: 20px; }
-    .section { margin-bottom: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Che | Electrical Engineering Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-<header style="text-align: center;">
-    <img src="profile.jpg" alt="Jin Che" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
-    <h1>Jin Che</h1>
-    <p><strong>Curriculum Vitae</strong></p>
-    <p>Email: <a href="mailto:jin.che@mail.utoronto.ca">jin.che@mail.utoronto.ca</a> | Phone: +1 778 323 9958</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jin-che-6a1277201/">https://www.linkedin.com/in/jin-che-6a1277201/</a> | GitHub: <a href="https://github.com/bcTornado608">https://github.com/bcTornado608</a></p>
-</header>
+    <nav id="navbar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#publications" class="nav-link">Publications</a>
+    </nav>
 
-<div class="section">
-    <h2>Education</h2>
-    <p><strong>Ph.D. in Electrical Engineering</strong> – University of Toronto, Toronto, ON, Canada (2025 – present)</p>
-    <p>Supervisor: Prof. Antonio Liscidini</p>
-    <p><strong>Bachelor of Applied Science in Electrical Engineering</strong> – University of Toronto, Toronto, ON, Canada (2020 – 2025)</p>
-    <p>cGPA: 3.80/4.00</p>
-</div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Jin Che" class="profile-img">
+                <h1 id="about">Jin Che</h1>
+                <p class="title">Ph.D. Researcher | ASIC/RF Design</p>
+            </div>
 
-<div class="section">
-    <h2>Research Interest</h2>
-    <p>Integrated Circuits; RF Circuit Design; Biomedical Electronics; Sensing</p>
-</div>
+            <section class="contact-info">
+                <h2><i class="fas fa-id-card"></i> Contact</h2>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:jin.che@mail.utoronto.ca">jin.che@mail.utoronto.ca</a></p>
+                <p><i class="fas fa-phone-alt"></i> +1 778 323 9958</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jin-che-6a1277201/">LinkedIn Profile</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/bcTornado608">GitHub Profile</a></p>
+            </section>
 
-<div class="section">
-    <h2>Research Internships</h2>
-    <h3>Research Assistant – Intelligent Sensory Microsystems Laboratory, University of Toronto (2024/05 – 2025/05)</h3>
-    <p>Faculty Mentor: Prof. Roman Genov</p>
-    <ul>
-        <li>Focused on designing, simulating, and testing advanced PCB systems, including wireless energy harvesting and neural stimulation.</li>
-        <li>Developed control logic for a SAR ADC on FPGA, and performed spike sorting with basic machine learning algorithms.</li>
-        <li>Contributed to multiple research projects, submitted to the IEEE ISSCC, involving ADC designs and neural stimulation systems.</li>
-    </ul>
-</div>
+            <section class="skills-info">
+                <h2><i class="fas fa-cogs"></i> Skills & Tools</h2>
+                
+                <div class="skill-group">
+                    <h3>IC & PCB Design</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">IC Design & Layout</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PCB Design</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                </div>
 
-<div class="section">
-    <h2>Professional Experience</h2>
-    <h3>ASIC Design Engineer, Intern – Advanced Micro Devices, Inc. (2023/05 – 2024/05)</h3>
-    <p>Supervisor: Zehra Allabachayo</p>
-    <ul>
-        <li>Upgraded and maintained the debug bus and performance counter design in the PCIe transaction layer sub-IP.</li>
-        <li>Managed clock domain crossing and lint violations to ensure smooth design operations.</li>
-        <li>Initialized new project variants, debugging build failures, and making code and parameter adjustments.</li>
-        <li>Optimized design infrastructure by updating components and improving power efficiency using power clamps.</li>
-    </ul>
-</div>
+                <div class="skill-group">
+                    <h3>Programming</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Verilog</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python / C++</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>
+                </div>
+                
+                <div class="tools-list">
+                    <h3>Tools Used</h3>
+                    <p>Cadence Virtuoso, Altium Designer, Intel Quartus Prime, AMD Vivado, Verdi, Spyglass Lint, Modelsim</p>
+                </div>
+            </section>
 
-<div class="section">
-    <h2>Projects</h2>
-    <h3>Brainzoom</h3>
-    <p>Intelligent Sensory Microsystems Laboratory, Ontario, Canada</p>
-    <ul>
-        <li>Designed COB (chip-on-board) for a next-generation ADC design specialized for brain activity recording.</li>
-        <li>Led the assembly and testing of the boards, ensuring thorough validation of system functionality.</li>
-    </ul>
+             <section class="awards-info">
+                <h2><i class="fas fa-trophy"></i> Awards</h2>
+                <ul>
+                    <li>NSERC USRA Summer Award ($7,500) – 2024/04</li>
+                    <li>Wallberg Admission Scholarships ($5,000) – 2020/10</li>
+                    <li>Edward S Rogers Sr. Admission Scholarship ($1,000) – 2020/10</li>
+                </ul>
+            </section>
+        </aside>
 
-    <h3>Netron</h3>
-    <p>Intelligent Sensory Microsystems Laboratory, Ontario, Canada</p>
-    <ul>
-        <li>Designed and tested control logic for a Successive Approximation Register (SAR) ADC on an FPGA board.</li>
-        <li>Performed spike sorting using k-means clustering on neural data from both in vivo and in vitro experiments, recorded with our custom-designed ADC.</li>
-    </ul>
+        <main class="content">
 
-    <h3>PNS with Machine Learning Mediated Dynamic Power Supply</h3>
-    <p>Intelligent Sensory Microsystems Laboratory, Ontario, Canada</p>
-    <ul>
-        <li>Led the design and layout of the project from scratch, testing the printed circuit board and running experiments on neural tissue.</li>
-        <li>Programmed a microcontroller to learn voltage patterns across neural tissues using machine learning techniques.</li>
-    </ul>
-</div>
+            <section id="research-interest" class="main-section">
+                <h2><i class="fas fa-brain"></i> Research Focus</h2>
+                <p class="research-focus">Integrated Circuits (IC), RF Circuit Design, Biomedical Electronics, and Sensing for next-generation systems.</p>
+            </section>
+            
+            <hr>
 
-<div class="section">
-    <h2>Publications</h2>
-    <p><strong>Conference Paper (Peer Reviewed):</strong></p>
-    <p>J. Xu, M. Kanchwala, M. Abdolrazzaghi, H. Cai, Y. Huang, J. Ma, C. Lim, L. Xu, S. Gong, W. Deng, Q. Deng, <strong>J. Che</strong>, S. Nag, J. Olorocisimo, R. Singh, Y. Wang, J. Sales Filho, M. Mohaved, H. Moradi, G. Eleftheriades, T. Valiante, and R. Genov, "Event-Based Spatially Zooming Neural Interface IC with 10nW/Input Reconfigurable-Inverter Fabric and Input-Adaptive Quantization." <em>IEEE International Solid-State Circuits Conference (ISSCC 2025)</em>, Session 15.5, pp. 274–276, San Francisco, CA, USA, Feb 18 2025.</p>
+            <section id="education" class="main-section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="timeline-item">
+                    <span class="duration">2025 – Present</span>
+                    <h3>Ph.D. in Electrical Engineering</h3>
+                    <p class="institution">University of Toronto, Toronto, ON</p>
+                    <p>Supervisor: Prof. Antonio Liscidini</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="duration">2020 – 2025</span>
+                    <h3>Bachelor of Applied Science in Electrical Engineering</h3>
+                    <p class="institution">University of Toronto, Toronto, ON</p>
+                    <p>cGPA: <strong>3.80/4.00</strong></p>
+                </div>
+            </section>
 
-    <p><strong>Journal Article (Peer Reviewed):</strong></p>
-    <p>S. Nag, A. Remadevi, <strong>J. Che</strong>, M. Prytula, H. Xing, H. Xing, X. Xiao, A. Constas-Malvanets, H. Zhang, Y. Sun, J. Olorocisimo, J. Zariffa, and R. Genov, "Energy-Efficient Adaptive Neural Stimulator with Waveform Prediction by Sub-Threshold Interrogation of the Electrode-Tissue Interface." <em>IEEE Transactions on Biomedical Circuits and Systems</em>, vol. PP, no. 99 (early access), May 2025. DOI: 10.1109/TBCAS.2025.3570264.</p>
-</div>
+            <hr>
 
-<div class="section">
-    <h2>Scholarships & Awards</h2>
-    <ul>
-        <li>NSERC USRA Summer Award ($7,500) – 2024/04</li>
-        <li>Edward S Rogers Sr. Admission Scholarship ($1,000) – 2020/10</li>
-        <li>Faculty Of Applied Science And Engineering Admission Scholarship ($222) – 2020/10</li>
-        <li>Wallberg Admission Scholarships ($5,000) – 2020/10</li>
-    </ul>
-</div>
+            <section id="experience" class="main-section">
+                <h2><i class="fas fa-briefcase"></i> Professional & Research Experience</h2>
 
-<div class="section">
-    <h2>Skills & Tools</h2>
-    <p><strong>Tools:</strong> Cadence Virtuoso, Altium Designer, Intel Quartus Prime, AMD Vivado, Verdi, Spyglass Lint, Modelsim</p>
-    <p><strong>Skills:</strong> IC Design and Layout, PCB Design, Signal Processing, Verilog, C, C++, Perl, Python, Java, ARM Assembly</p>
-</div>
+                <div class="job-card">
+                    <span class="duration">2023/05 – 2024/05</span>
+                    <h3>ASIC Design Engineer, Intern</h3>
+                    <p class="company"><i class="fas fa-building"></i> Advanced Micro Devices, Inc. (AMD)</p>
+                    <ul>
+                        <li><strong>PCIe Sub-IP Maintenance:</strong> Upgraded and maintained the debug bus and performance counter design in the PCIe transaction layer.</li>
+                        <li><strong>Design Integrity:</strong> Managed <strong>Clock Domain Crossing (CDC)</strong> and lint violations for smooth design operations.</li>
+                        <li><strong>Infrastructure Optimization:</strong> Optimized design infrastructure by updating components and improving power efficiency using power clamps.</li>
+                    </ul>
+                </div>
+                
+                <div class="job-card">
+                    <span class="duration">2024/05 – 2025/05</span>
+                    <h3>Research Assistant</h3>
+                    <p class="company"><i class="fas fa-flask"></i> Intelligent Sensory Microsystems Laboratory, U of T</p>
+                    <ul>
+                        <li><strong>System Design:</strong> Designed, simulated, and tested advanced PCB systems for <strong>wireless energy harvesting</strong> and <strong>neural stimulation</strong>.</li>
+                        <li><strong>Digital Logic:</strong> Developed control logic for a SAR ADC on FPGA, and performed <strong>spike sorting</strong> with basic machine learning algorithms.</li>
+                        <li><strong>High-Impact Research:</strong> Contributed to multiple research projects submitted to <strong>IEEE ISSCC</strong>, involving ADC designs.</li>
+                    </ul>
+                </div>
+            </section>
 
-<footer>
-    <p>&copy; 2025 Jin Che</p>
-</footer>
+            <hr>
+            
+            <section id="projects" class="main-section">
+                <h2><i class="fas fa-code-branch"></i> Key Projects</h2>
+                <div class="project-card">
+                    <h3>Brainzoom: COB Design for Next-Gen ADC</h3>
+                    <p class="location">Intelligent Sensory Microsystems Laboratory</p>
+                    <ul>
+                        <li>Designed <strong>Chip-on-Board (COB)</strong> for a next-generation ADC specialized for brain activity recording.</li>
+                        <li>Led the assembly and testing of the boards, ensuring thorough system validation.</li>
+                    </ul>
+                </div>
 
+                <div class="project-card">
+                    <h3>PNS with ML Mediated Dynamic Power Supply</h3>
+                    <p class="location">Intelligent Sensory Microsystems Laboratory</p>
+                    <ul>
+                        <li>Led the <strong>design and layout</strong> of the project from scratch, including PCB testing and running experiments on neural tissue.</li>
+                        <li>Programmed a microcontroller to <strong>learn voltage patterns</strong> across neural tissues using <strong>machine learning</strong> techniques.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Netron: SAR ADC Control & Spike Sorting</h3>
+                    <p class="location">Intelligent Sensory Microsystems Laboratory</p>
+                    <ul>
+                        <li>Designed and tested <strong>control logic for a SAR ADC</strong> on an FPGA board.</li>
+                        <li>Performed <strong>spike sorting</strong> using <strong>k-means clustering</strong> on neural data from in vivo/vitro experiments.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="publications" class="main-section">
+                <h2><i class="fas fa-book-open"></i> Publications</h2>
+                
+                <h3>Conference Paper (Peer Reviewed)</h3>
+                <p class="publication-entry">
+                    J. Xu, M. Kanchwala, M. Abdolrazzaghi, H. Cai, Y. Huang, J. Ma, C. Lim, L. Xu, S. Gong, W. Deng, Q. Deng, **<span class="highlight-author">J. Che</span>**, S. Nag, J. Olorocisimo, R. Singh, Y. Wang, J. Sales Filho, M. Mohaved, H. Moradi, G. Eleftheriades, T. Valiante, and R. Genov, "<strong>Event-Based Spatially Zooming Neural Interface IC...</strong>" <em>IEEE International Solid-State Circuits Conference (ISSCC 2025)</em>.
+                </p>
+
+                <h3>Journal Article (Peer Reviewed)</h3>
+                <p class="publication-entry">
+                    S. Nag, A. Remadevi, **<span class="highlight-author">J. Che</span>**, M. Prytula, H. Xing, H. Xing, X. Xiao, A. Constas-Malvanets, H. Zhang, Y. Sun, J. Olorocisimo, J. Zariffa, and R. Genov, "<strong>Energy-Efficient Adaptive Neural Stimulator...</strong>" <em>IEEE Transactions on Biomedical Circuits and Systems</em> (early access), May 2025.
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Jin Che | Built for Impact</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
